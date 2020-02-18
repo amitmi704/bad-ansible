@@ -1,17 +1,14 @@
 [frontends]
-frontend1.${GUID}.internal ansible_ssh_host=frontend1.${GUID}.example.opentlc.com
+frontend1.62f0.internal ansible_ssh_host=frontend1.62f0.example.opentlc.com
 
 [apps]
-app1.${GUID}.internal ansible_ssh_host=app1.${GUID}.example.opentlc.com
-app2.${GUID}.internal ansible_ssh_host=app2.${GUID}.example.opentlc.com
+app1.62f0.internal ansible_ssh_host=app1.62f0.example.opentlc.com
+app2.62f0.internal ansible_ssh_host=app2.62f0.example.opentlc.com
 
 [appdbs]
-appdb1.${GUID}.internal ansible_ssh_host=appdb1.${GUID}.example.opentlc.com
+appdb1.62f0.internal ansible_ssh_host=appdb1.62f0.example.opentlc.com
 
 [internal:children]
 frontends
 apps
 appdbs
-
-[internal:vars]
-GUID="{{ lookup('env', 'GUID') }}"
