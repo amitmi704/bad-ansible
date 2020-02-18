@@ -6,10 +6,10 @@ app1 ansible_host=app1.62f0.internal
 app2 ansible_host=app2.62f0.internal
 
 [appdbs]
-appdb1 ansible_host=app1.62f0.internal
+appdb1 ansible_host=appdb1.62f0.internal
 
 [support]
-support1 ansible_host=app1.62f0.internal
+support1 ansible_host=support1.62f0.internal
 
 [threetierapp:children]
 frontends
